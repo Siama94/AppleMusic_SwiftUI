@@ -41,6 +41,8 @@ struct LibraryView: View {
     }
 }
 
+// MARK: - Previews
+
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()

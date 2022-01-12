@@ -199,46 +199,46 @@ struct PlayerView: View {
 extension PlayerView {
 
     enum Metric {
-    static let screenFractionImage: CGFloat = 3.5
+        static let screenFractionImage: CGFloat = 3.5
 
-    static let widthUpperСapsule: CGFloat = 40
-    static let heightUpperСapsule: CGFloat = 4
-    static let paddingUpperСapsule: CGFloat = 40
-    static let zeroCGFloat: CGFloat = 0
+        static let widthUpperСapsule: CGFloat = 40
+        static let heightUpperСapsule: CGFloat = 4
+        static let paddingUpperСapsule: CGFloat = 40
+        static let zeroCGFloat: CGFloat = 0
 
-    static let cornerRadiusForImage: CGFloat = 5
-    static let widthForImage: CGFloat = 55
-    static let heightForImage: CGFloat = widthForImage
-    
-    static let shadowRadius: CGFloat = 10
-    static let shadowAxisX: CGFloat = 0.0
-    static let shadowAxisY: CGFloat = 5.0
+        static let cornerRadiusForImage: CGFloat = 5
+        static let widthForImage: CGFloat = 55
+        static let heightForImage: CGFloat = widthForImage
+        
+        static let shadowRadius: CGFloat = 10
+        static let shadowAxisX: CGFloat = 0.0
+        static let shadowAxisY: CGFloat = 5.0
 
-    static let sizeFontArtist: CGFloat = 18
-    static let sizeFontTrack: CGFloat = 20
+        static let sizeFontArtist: CGFloat = 18
+        static let sizeFontTrack: CGFloat = 20
 
-    static let widthForCircle: CGFloat = 7
-    static let heightForCircle: CGFloat = 10
-    static let trailingPaddingCircle: CGFloat = 350
+        static let widthForCircle: CGFloat = 7
+        static let heightForCircle: CGFloat = 10
+        static let trailingPaddingCircle: CGFloat = 350
 
-    static let widthTrackCapsule: CGFloat = 350
-    static let heightTrackCapsule: CGFloat = 2
+        static let widthTrackCapsule: CGFloat = 350
+        static let heightTrackCapsule: CGFloat = 2
 
-    static let sizeFontTime: CGFloat = 12
-    static let paddingTime: CGFloat = 140
+        static let sizeFontTime: CGFloat = 12
+        static let paddingTime: CGFloat = 140
 
-    static let paddingVolume: CGFloat = 40
-    static let spacingBottomButtons: CGFloat = 90
-    static let opacityExpandView: CGFloat = 1
-    static let maxHeightPlayerView: CGFloat = 70
+        static let paddingVolume: CGFloat = 40
+        static let spacingBottomButtons: CGFloat = 90
+        static let opacityExpandView: CGFloat = 1
+        static let maxHeightPlayerView: CGFloat = 70
 
-    static let leadingPaddingForText: CGFloat = 10
-    static let opacityForText: CGFloat = 0.7
-    
-    static let trailingPaddingForButtonPlay: CGFloat = 10
-    static let trailingPaddingForButtonForward: CGFloat = 5
-    
-    static let heightForPlayerView: CGFloat = 75
-    static let offsetFromBottomForPlayer: CGFloat = -49
+        static let leadingPaddingForText: CGFloat = 10
+        static let opacityForText: CGFloat = 0.7
+
+        static let trailingPaddingForButtonPlay: CGFloat = 10
+        static let trailingPaddingForButtonForward: CGFloat = 5
+
+        static let heightForPlayerView: CGFloat = 75
+        static let offsetFromBottomForPlayer: CGFloat = -49
     }
 }

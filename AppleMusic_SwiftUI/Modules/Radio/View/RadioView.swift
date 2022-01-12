@@ -35,17 +35,19 @@ struct RadioView: View {
     }
 }
 
-struct RadioView_Previews: PreviewProvider {
-    static var previews: some View {
-        RadioView()
-    }
-}
-
 // MARK: - Metric
 
 extension RadioView {
 
     enum Metric {
-    static let widthRadioItemView: CGFloat = 360
+        static let widthRadioItemView: CGFloat = 360
+    }
+}
+
+// MARK: - Previews
+
+struct RadioView_Previews: PreviewProvider {
+    static var previews: some View {
+        RadioView()
     }
 }

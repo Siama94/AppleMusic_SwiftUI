@@ -43,23 +43,25 @@ struct StationItemView: View {
     }
 }
 
-struct StationItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        StationItemView()
-    }
-}
-
 // MARK: - Metric
 
 extension StationItemView {
 
     enum Metric {
-    static let cornerRadiusForImage: CGFloat = 5
-    static let widthForImage: CGFloat = 100
-    
-    static let sizeFontName: CGFloat = 18
-    static let sizeFontTittle: CGFloat = 14
-    
-    static let leadingPaddingForDivider: CGFloat = 110
+        static let cornerRadiusForImage: CGFloat = 5
+        static let widthForImage: CGFloat = 100
+
+        static let sizeFontName: CGFloat = 18
+        static let sizeFontTittle: CGFloat = 14
+
+        static let leadingPaddingForDivider: CGFloat = 110
+    }
+}
+
+// MARK: - Previews
+
+struct StationItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        StationItemView()
     }
 }

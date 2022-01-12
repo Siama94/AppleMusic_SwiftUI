@@ -34,16 +34,18 @@ struct CategorySelectedView: View {
     }
 }
 
-struct CategorySelectedView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategorySelectedView()
-    }
-}
 
-// MARK: - Metric
 
 extension CategorySelectedView {
     enum Metric {
         static let leadingPaddingForText: CGFloat = 90
+    }
+}
+
+// MARK: - Previews
+
+struct CategorySelectedView_Previews: PreviewProvider {
+    static var previews: some View {
+        CategorySelectedView()
     }
 }

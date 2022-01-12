@@ -38,12 +38,6 @@ struct CateroriesTracksView: View {
     }
 }
 
-struct CateroriesTracksView_Previews: PreviewProvider {
-    static var previews: some View {
-        CateroriesTracksView()
-    }
-}
-
 // MARK: - Metric
 
 extension CateroriesTracksView {
@@ -54,5 +48,13 @@ extension CateroriesTracksView {
         static let cornerRadiusForImage: CGFloat = 5
 
         static let leadingPaddingForTracks: CGFloat = 20
+    }
+}
+
+// MARK: - Previews
+
+struct CateroriesTracksView_Previews: PreviewProvider {
+    static var previews: some View {
+        CateroriesTracksView()
     }
 }

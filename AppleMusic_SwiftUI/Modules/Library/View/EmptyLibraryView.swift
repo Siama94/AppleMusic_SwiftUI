@@ -24,17 +24,19 @@ struct EmptyLibraryView: View {
     }
 }
 
-struct EmptyLibraryView_Previews: PreviewProvider {
-    static var previews: some View {
-        EmptyLibraryView()
-    }
-}
-
 // MARK: - Metric
 
 extension EmptyLibraryView {
 
     enum Metric {
-    static let bottomPaddingForTopText: CGFloat = 1
+        static let bottomPaddingForTopText: CGFloat = 1
+    }
+}
+
+// MARK: - Previews
+
+struct EmptyLibraryView_Previews: PreviewProvider {
+    static var previews: some View {
+        EmptyLibraryView()
     }
 }

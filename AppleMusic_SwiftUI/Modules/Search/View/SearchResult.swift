@@ -61,14 +61,7 @@ struct SearchResult: View {
     }
 }
 
-struct SearchResultAppleMusic_Previews: PreviewProvider {
-
-    @State static var searchText = ""
-    
-    static var previews: some View {
-        SearchResult(searchText: $searchText)
-    }
-}
+// MARK: - Metric
 
 extension SearchResult {
 
@@ -82,5 +75,16 @@ extension SearchResult {
         static let leadingPaddingForDivider: CGFloat = 45
         static let trailingPaddingForDivider: CGFloat = 20
 
+    }
+}
+
+// MARK: - Previews
+
+struct SearchResultAppleMusic_Previews: PreviewProvider {
+
+    @State static var searchText = ""
+    
+    static var previews: some View {
+        SearchResult(searchText: $searchText)
     }
 }

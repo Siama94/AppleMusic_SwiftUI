@@ -37,19 +37,21 @@ struct FilterLibraryView: View {
     }
 }
 
-struct FilterLibraryView_Previews: PreviewProvider {
-    static var previews: some View {
-        FilterLibraryView()
-    }
-}
-
 // MARK: - Metric
 
 extension FilterLibraryView {
 
     enum Metric {
-    static let widthForImage: CGFloat = 25
-    static let heightForImage: CGFloat = widthForImage
-    static let paddingForImage: CGFloat = 10
+        static let widthForImage: CGFloat = 25
+        static let heightForImage: CGFloat = widthForImage
+        static let paddingForImage: CGFloat = 10
+    }
+}
+
+// MARK: - Previews
+
+struct FilterLibraryView_Previews: PreviewProvider {
+    static var previews: some View {
+        FilterLibraryView()
     }
 }

@@ -41,27 +41,29 @@ struct RadioItemView: View {
     }
 }
 
-struct RadioItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        RadioItemView()
-    }
-}
-
 // MARK: - Metric
 
 extension RadioItemView {
 
     enum Metric {
-    
-    static let rowGridItem: CGFloat = 330
-    
-    static let sizeFontCategory: CGFloat = 15
-    static let sizeFontName: CGFloat = 22
-    static let sizeFontTitle: CGFloat = 22
-    
-    static let widthForImage: CGFloat = 380
-    static let heightForImage: CGFloat = 260
 
-    static let cornerRadiusForImage: CGFloat = 5
+        static let rowGridItem: CGFloat = 330
+
+        static let sizeFontCategory: CGFloat = 15
+        static let sizeFontName: CGFloat = 22
+        static let sizeFontTitle: CGFloat = 22
+
+        static let widthForImage: CGFloat = 380
+        static let heightForImage: CGFloat = 260
+
+        static let cornerRadiusForImage: CGFloat = 5
+    }
+}
+
+// MARK: - Previews
+
+struct RadioItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        RadioItemView()
     }
 }

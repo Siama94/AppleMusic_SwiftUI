@@ -70,11 +70,7 @@ struct SearchMainView: View {
     }
 }
 
-struct SearchMainView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchMainView()
-    }
-}
+
 
 extension SearchMainView {
 
@@ -94,5 +90,13 @@ extension SearchMainView {
 
         static let leadingPaddingForTitle: CGFloat = 10
         static let bottomPaddingForTitle: CGFloat = 15
+    }
+}
+
+// MARK: - Previews
+
+struct SearchMainView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchMainView()
     }
 }

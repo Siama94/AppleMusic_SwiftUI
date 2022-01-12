@@ -28,6 +28,8 @@ struct SearchNavigationView: View {
     }
 }
 
+// MARK: - Previews
+
 struct SearchNavigationView_Previews: PreviewProvider {
     @State static var searchText = ""
 
