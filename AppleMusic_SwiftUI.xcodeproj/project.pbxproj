@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5568FFDA2791251900423E6B /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568FFD92791251900423E6B /* CategoriesCell.swift */; };
+		5568FFDC2791252400423E6B /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568FFDB2791252400423E6B /* CategoriesViewController.swift */; };
+		5568FFDE2791252A00423E6B /* SearchViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568FFDD2791252A00423E6B /* SearchViewControllerRepresentable.swift */; };
 		5574DCF4273CB06000841E4A /* AppleMusic_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DCF3273CB06000841E4A /* AppleMusic_SwiftUIApp.swift */; };
 		5574DCF8273CB06000841E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5574DCF7273CB06000841E4A /* Assets.xcassets */; };
 		5574DCFB273CB06000841E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5574DCFA273CB06000841E4A /* Preview Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5568FFD92791251900423E6B /* CategoriesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		5568FFDB2791252400423E6B /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		5568FFDD2791252A00423E6B /* SearchViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		5574DCF0273CB05F00841E4A /* AppleMusic_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5574DCF3273CB06000841E4A /* AppleMusic_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic_SwiftUIApp.swift; sourceTree = "<group>"; };
 		5574DCF7273CB06000841E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5568FFD8279124FB00423E6B /* SearchUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5568FFD92791251900423E6B /* CategoriesCell.swift */,
+				5568FFDB2791252400423E6B /* CategoriesViewController.swift */,
+				5568FFDD2791252A00423E6B /* SearchViewControllerRepresentable.swift */,
+			);
+			path = SearchUIKit;
+			sourceTree = "<group>";
+		};
 		5574DCE7273CB05F00841E4A = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +226,7 @@
 		55DF254B2787A1D400487E0B /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				5568FFD8279124FB00423E6B /* SearchUIKit */,
 				55DF254C2787A1E400487E0B /* View */,
 				55DF254D2787A1EA00487E0B /* Model */,
 			);
@@ -309,6 +326,7 @@
 				5574DD18273CE09000841E4A /* EmptyLibraryView.swift in Sources */,
 				5574DD222749744200841E4A /* RadioItemView.swift in Sources */,
 				55E10D5A2788E84F0027572E /* RadioItemsPublishedData.swift in Sources */,
+				5568FFDA2791251900423E6B /* CategoriesCell.swift in Sources */,
 				55E10D562787ECD10027572E /* SearchNavigationView.swift in Sources */,
 				5574DD242749790600841E4A /* StationsItemsModel.swift in Sources */,
 				5574DD14273CB93500841E4A /* LibraryView.swift in Sources */,
@@ -324,8 +342,10 @@
 				5574DD12273CB92200841E4A /* PlayerView.swift in Sources */,
 				55E10D60278943D90027572E /* PlayerBlurView.swift in Sources */,
 				5574DD10273CB86800841E4A /* TabView.swift in Sources */,
+				5568FFDE2791252A00423E6B /* SearchViewControllerRepresentable.swift in Sources */,
 				5574DCF4273CB06000841E4A /* AppleMusic_SwiftUIApp.swift in Sources */,
 				55E10D5C2788EAFE0027572E /* StationItemsPublishedData.swift in Sources */,
+				5568FFDC2791252400423E6B /* CategoriesViewController.swift in Sources */,
 				5574DD16273CB94C00841E4A /* RadioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

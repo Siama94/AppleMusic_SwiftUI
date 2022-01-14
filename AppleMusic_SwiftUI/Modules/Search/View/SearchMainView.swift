@@ -20,47 +20,20 @@ struct SearchMainView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
+            VStack {
+                if searchText.isEmpty {
+                    Text("Поиск по категориям")
+                        .font(.system(size: Metric.fontSizeForHeading))
+                        .fontWeight(.bold)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, Metric.leadingPaddingForTitle)
 
-                    if searchText.isEmpty {
-
-                        Text("Поиск по категориям")
-                            .font(.system(size: Metric.fontSizeForHeading))
-                            .fontWeight(.bold)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-
-                        LazyVGrid(columns: columns) {
-
-                            ForEach(dataModel, id: \.id)  { data in
-
-                                ZStack {
-                                    NavigationLink(destination: CategorySelectedView()) {
-
-                                        Image(data.image)
-                                            .resizable()
-                                            .frame(width: Metric.widthForImage,
-                                                   height: Metric.heightForImage)
-                                            .scaledToFill()
-                                            .cornerRadius(Metric.cornerRadiusForImage)
-                                    }
-
-                                    Text(data.title)
-                                        .frame(width: Metric.widthForTextFrame,
-                                               height: Metric.heightForTextFrame,
-                                               alignment: .bottomLeading)
-                                        .font(.system(size: Metric.fontSizeForTitleCategories, weight: .black))
-                                        .foregroundColor(.white)
-                                        .padding(.leading, Metric.leadingPaddingForTitle)
-                                        .padding(.bottom, Metric.bottomPaddingForTitle)
-                                }
-                            }
-                        }
-                    } else {
+                    SearchViewControllerRepresentable()
+                } else {
+                    ScrollView {
                         SearchNavigationView(searchText: $searchText)
-                    }
+                    }.padding()
                 }
-                .padding()
             }
             .navigationBarTitle(Text("Поиск"))
             .searchable(text: $searchText,
